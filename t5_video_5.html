@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style type="text/css">
+	.utlink {background-color:yellow;color:blue;}
+	.imgSize {height:200px;width:200px;}
+</style>
+
+
+</head>
+<body>
+<div id="my-app">
+<p>Event Handling "v-on" Example</p>
+<h4>Counter : {{counter}}</h4>
+<input type="button" v-on:click="increment(1)" value="Increment By 1">
+<input type="button" @click="decrement(1)" value="Decrement By 1">
+
+<input type="button" v-on:dblclick="increment(5)" value="Increment By 5">
+<input type="button" @dblclick="decrement(5)" value="Decrement By 5">
+
+<p>"v-model" example</p>
+<input type="text" v-model="txtMsg" >
+<p>TextInput Value : <span style="color:red;">{{txtMsg}}</span></p>
+	
+</div>
+<script src="t5_video_5.js"></script>
+</body>
+</html>
