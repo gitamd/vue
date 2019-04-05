@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style type="text/css">
+	.utclass {background-color:yellow;color:blue;}
+	.imgSize {height:200px;width:200px;}
+</style>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+
+</head>
+<body>
+
+<div id="my-app">
+	
+<a v-bind:href="ulink">{{name}}</a>
+<a v-bind:href="ulink" v-bind:class="utclass" >{{name}}</a>
+<BR>
+<img v-bind:src="imageLink" v-bind:class="{imgSize:isActive}">
+<p>Change isActive in .js file to view effect</p>
+
+</div>
+
+<script src="t4_video-4.js"></script>
+
+</body>
+</html>
