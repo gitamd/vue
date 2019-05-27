@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+.move-area { height: 200px; width:200px; border:1px solid red;}
+</style>
+</head>
+<body>
+
+<div id="myapp">
+    <h3>Key Modifier : enter, alt, ctrl, keyCode, delete, space </h3>
+    <h4>Check following events in checkbox, output will be logged in console</h4>
+    <div><span>keyup.alt.enter</span> <input type="text" @keyup.alt.enter="keyAltEnter" ></div>
+    <div><span>keyup.enter</span> <input type="text" @keyup.enter="keyEnter" ></div>
+    <div><span>keyup.ctrl.enter</span> <input type="text" @keyup.ctrl.enter="keyCtrlEnter" ></div>
+    <div><span>keyup.space</span> <input type="text" @keyup.space="keySpace" ></div>
+    <div><span>keyup.delete</span> <input type="text" @keyup.delete="keyDelete" ></div>
+    <div><span>keyup.keyCode</span> <input type="text" @keyup.keyCode.65="keyKeyCode" ></div>   
+</div>
+<script src="v9.js" ></script>
+</body>
+</html>
