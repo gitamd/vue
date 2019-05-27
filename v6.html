@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+.move-area { height: 200px; width:200px; border:1px solid red;}
+</style>
+</head>
+<body>
+
+<div id="myapp">
+    
+    <div class="move-area" v-on:mousemove="movefunction">
+        <span>{{x}}, {{y}}</span>
+    </div>
+
+    <div class="move-area" @mouseout="outfunction" v-on:mouseover="overfunction">{{message}}</div>
+    
+
+</div>
+
+<script src="v6.js" ></script>
+
+</body>
+</html>

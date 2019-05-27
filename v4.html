@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+.fixWidth {width:200px; height: auto;}
+.imgBorder {border-radius: 3px;}
+.error {border:2px color red; color:red; font-size: 20px;}
+
+.error1{font-size:24px;color: red;}
+.capitalize { text-transform: capitalize; color: blue;}
+</style>
+</head>
+<body>
+
+<div id="myapp">
+    WebSite : <a v-bind:href="webUrlLink" target="new" >{{webUrlText}}</a> 
+    <br>
+    <img v-bind:title="imgTitle" v-bind:src="imgSrc" v-bind:class="{fixWidth:isActive, imgBorder:hasImgBorder}">    
+    <br>
+    <div v-bind:class="{error:hasError}" >This is error activated with hasError = true </div>
+    <div v-bind:class="classObject">class object with two attribute</div>
+
+    <form method="post">
+        Name: <input type="text" v-bind:placeholder="txtName"> Email: <input type="text" v-bind:placeholder="txtEmail">
+    </form>
+    <div>{{htmlContent}}</div>
+    <div v-html="htmlContent"></div>
+    <div>Computed Function Example {{reverseString}}</div>
+      
+
+</div>
+
+<script src="v4.js" ></script>
+
+</body>
+</html>

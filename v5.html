@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="myapp">
+    <h3>Couner : {{counter}}</h3>   
+    <button v-on:click="increment">Increment by 1</button>
+    <button v-on:click="decrement">Decrement by 1</button>
+
+    <h3>Couner : {{custCounter}}</h3> 
+    <button @click="customCounter(5)">Single Click Increment by 5</button>
+    <button v-on:click="customCounter(-5)">Single Click Decrement by 5</button>
+    <button @dblclick="customCounter(5)">Double Click Increment by 5</button>
+    <button v-on:dblclick="customCounter(-5)">Double Click Decrement by 5</button>
+</div>
+
+<script src="v5.js" ></script>
+
+</body>
+</html>
