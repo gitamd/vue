@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+.move-area { height: 200px; width:200px; border:1px solid red;}
+</style>
+</head>
+<body>
+
+<div id="myapp">
+    <h3>Event Modifier once, prevent, stop, capture </h3>
+    {{counter}}
+    <br>
+    <button @click='incrementBy1'>Increment By 1</button>
+    <button @click.once='incrementBy1'>Increment By 1 - Once Only</button>
+    <br>
+
+    <h4>Prevent Link from Redirection</h4>
+    <a href="https://www.google.com/" @click.prevent >Click Me Prevent Example</a>
+    <br>
+    <form action="#" @submit.prevent>
+            <h4>Prevent Form from Submitting</h4>
+            <button type="submit">Submit Form</button>        
+    </form>
+    <br>
+
+    <div class="parent-class" @click="btnClick">
+        <h4>Check console logs, only execute child event ( here button)</h4>
+        <button @click.stop="btnClick">Button Click "stop" example</button>
+    </div>
+    <br>
+
+    <div id="parent_div" @click.capture="parentEvent">
+        <h4>Check console logs, parent event execute first and then child event will execute</h4>
+        <button @click="childEvent">Example  "capture"</button>
+    </div>
+</div>
+
+<script src="v8.js" ></script>
+
+</body>
+</html>
