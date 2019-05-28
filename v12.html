@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+.redClass {background-color: red;border: 1px solid red;color:white; border-radius: 50%;outline:none;}
+.blueClass {background-color: blue;border: 1px solid blue;color: white; border-radius: 50%;outline:none;}
+button {background-color: grey;color:white;width: 200px; height: 80px;}
+</style>
+</head>
+<body>
+<div id="myapp">
+    <h3>Dynamic CSS classes concept</h3>
+    <button v-on:click="toggleClass" v-bind:class="{redClass:isActive}">Click Me 1</button>
+    <br><br>
+    <button v-on:click="isActive1 = !isActive1" v-bind:class="{blueClass:isActive1}">Click Me 2</button>
+</div>
+<script src="v12.js" ></script>
+</body>
+</html>
