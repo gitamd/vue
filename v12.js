@@ -5,7 +5,6 @@ var myapp = new Vue({
         isActive1:false
     },
     methods : {
-        toggleClass : function(){this.isActive = !this.isActive;},
-        // toggleClass1 : function(){this.isActive1 = !this.isActive1;}
+        toggleClass : function(){this.isActive = !this.isActive;}   
     }
 });
