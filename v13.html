@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+button {width: 200px; height: 80px;}
+</style>
+</head>
+<body>
+<div id="myapp">
+    <h3>VueJs Conditional directives - v-if, v-else, v-else-if, v-show</h3> 
+
+<p v-if="isActive">This is if statement</p>
+<p v-else >This is else statement</p>
+<p v-show="isActive">This is show statement</p>
+
+<br>Counter : {{count}} <br>
+<button v-on:click="incrementCount">Increment By 1</button>
+<br>
+
+<p v-if="count == 1">This is paragraph 1</p>
+<p v-else-if="count == 2">This is paragraph 2</p>
+<p v-else-if="count == 3">This is paragraph 3</p>
+<p v-else-if="count == 4">This is paragraph 4</p>
+<p v-else-if="count == 5">This is paragraph 5</p>
+<p v-else>No Match Found</p>
+
+
+</div>
+<script src="v13.js" ></script>
+</body>
+</html>
