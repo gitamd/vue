@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style></style>
+</head>
+<body>
+<div id="myapp">
+    <h3>About computed Properties</h3>
+    <p>Computed properties can used to do quick calculatons of properties that displayed in the view, the calculation wil be cahced and only update when needed.</p>
+    <p>Computed properties allow us to have model-specific, complex values computed for the view. These values will be bound to the dependency values and only update when required.</p>
+
+    <div style="border:1px solid blue;">
+        First Name : <input type="text" v-model="firstname" placeholder="Firstname"> 
+        Last Name : <input type="text" v-model="lastname" placeholder="Lastname"> <br>
+        Full Name : {{getFullName}}
+    </div>
+    <div style="border:1px solid red;">
+            Meter : <input type="text" v-model="meter" placeholder="Enter meters"> to Centemeter <strong>{{getCentimeter}}</strong>
+    </div>
+    <div style="border:1px solid blue;">
+        Maths : <input type="text" v-model="maths" placeholder="Maths"> 
+        Science : <input type="text" v-model="science" placeholder="Science">
+        English : <input type="text" v-model="english" placeholder="English"> <br>
+        Total Marks : {{getTotalMarks}}
+    </div>    
+</div>
+<script src="v11.js" ></script>
+</body>
+</html>
