@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Learn Vue JS</title>
+<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+<style>
+button {width: 200px; height: 80px;}
+</style>
+</head>
+<body>
+<h3>Concept Multiple instances in VueJs</h3> 
+<div id="myapp1" style="border:1px solid red;">    
+    <h2>Message : {{message}}</h2>
+    <p>{{webFramework}} uses {{language}}</p>
+    <p>CMS : {{bestFreeCms()}}</p>
+    <p>cmsName : {{cmsName}}</p>
+</div>
+<BR><BR>
+<div id="myapp2" style="border:1px solid blue;">
+    <h2>Message : {{message}}</h2>
+    <p>{{language}}</p>
+    <p>Function Call : {{getCms()}}</p>
+    <p>Computed Function Call : {{freeCms}}</p>
+</div>
+<script src="v15.js" ></script> 
+</body>
+</html>
